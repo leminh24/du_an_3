@@ -1,10 +1,84 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --header-bg: #10375c;
+}
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+/* =======================================conmmon======================================= */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% - 24px);
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: #2e80ce;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* =======================================header=======================================  */
+.header {
+  padding-top: 30px;
+  min-height: 100vh;
+  background: var(--header-bg);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+}
+.action__log,
+.navbar__link {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  padding: 8px 21px;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+  position: relative;
+}
+.navbar__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 11px;
+}
+.action__sign {
+  min-width: 104px;
+  line-height: 44px;
+  font-size: 1.6rem;
+}
+.action__log {
+  margin-right: 7px;
 }
