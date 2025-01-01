@@ -49,6 +49,32 @@ a {
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
 }
+.control{
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+
+}
+.control__btn{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575F66;
+  background:#fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.control__btn:hover{
+  background: #2E80CE;
+  border-color: #2E80CE;
+  color: #fff;
+}
+.control__btn--next{
+ rotate: 180deg; 
+}
 /* =======================================header=======================================  */
 .header {
   padding-top: 30px;
@@ -276,4 +302,101 @@ a {
   font-weight: 400;
   line-height: 1.75; /* 175% */
   transition: 0.5s;
+}
+/* =======================================about======================================= */
+.about{
+  margin-top: 85px;
+  padding: 85px 0 206px;
+}
+.about-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__media{
+  width: 40%;
+}
+.about__image{
+
+  object-fit: cover;
+}
+.about__img{
+  position: relative;
+
+}
+.about__image--large{
+  width: 512px;
+height: 370px;
+border-radius: 6px;
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);}
+.about__image--smale{
+  position: absolute;
+  width: 332px;
+height: 370px;
+border-radius: 6px;
+z-index: 1;
+top: 121px;
+left: 238px;
+}
+
+.about__texts{
+  width: 40%;
+}
+.section-h2{
+  margin-bottom: 18px;
+}
+.section-desc{
+  margin-bottom: 38px;
+}
+/* ======================================= team ======================================= */
+.team{
+  padding: 85px auto;
+}
+.team-header{
+  text-align: center;
+  margin: 0 auto;
+}
+.team__btn{
+  margin-top: 38px;
+}
+.team__list{
+  margin-top: 70px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4,1fr);
+}
+.team-item:hover .team-item__img{
+  transform: scale(1.1);
+}
+.team-item__img{
+max-width: 100%;
+height: 290px;
+object-fit: cover;
+display: block;
+transition: 0.5s;
+}
+.team-item__img-bg{
+  border-radius: 6px;
+background: #EAF6FF;
+padding-top: 28px;
+overflow: hidden;
+}
+.team-item__name{
+  margin-top: 12px;
+  text-align: center;
+  color: #10375C;
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 1.75; /* 175% */
+}
+.team-item__desc{
+  color: #575F66;
+text-align: center;
+font-size: 1.4rem;
+font-weight: 300;
+line-height: 1.86; /* 185.714% */
+}
+.team__control{
+  margin-top: 38px;
+  justify-content: center;
 }
